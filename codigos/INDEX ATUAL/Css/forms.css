@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --body-color: #E4E9F7;
+    --sidebar-color: #fff;
+    --primary-color: #695CFE;
+    --primary-color-icon: #695CFE;
+    --second-color: #5247d4;
+    --bnt-color: #7e57c2;
+    --primary-color-light: #e7ebf5;
+    --text-color: #707070;
+    --toggle-color: #DDDD;
+
+
+    --transition-02: all 0.2s ease;
+    --transition-03: all 0.3s ease;
+    --transition-04: all 0.4s ease;
+    --transition-05: all 0.5s ease;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: var(--sidebar-color);
+    width: 100%;
+    height: 100vh;
+}
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.login-direita img {
+    width: 70%;
+}
+
+
+.login-esquerda,
+.login-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+.caixa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--second-color);
+    padding: 4rem;
+}
+
+.form_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+}
+
+.login_bnt {
+    display: flex;
+    align-items: center;
+    transition: var(--transition-02);
+}
+
+.login_bnt button {
+    border: none;
+    background: var(--bnt-color);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--sidebar-color);
+}
+
+.login_bnt:hover {
+    transform: scale(1.1);
+}
+
+.input_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input_box input {
+    width: 100%;
+    margin: 0.6rem 0;
+    margin-right: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.grupo_genero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+}
+
+.genero{
+    display: flex;
+    align-items: center;
+}
+
+.input_genero {
+    width: 100%;
+}
+
+.input_genero input {
+    margin-right: 0.35rem;
+}
+
+.bnt {
+    width: 100%;
+}
+
+.bnt button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background: var(--bnt-color);
+    padding: 0.62rem;
+    border-radius: 6px;
+    transition: var(--transition-02);
+}
+
+.bnt button:hover {
+    transform: scale(1.02);
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: currentColor;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--primary-color);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .login-direita,
+    .login-esquerda {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-direita img {
+        width: 35vh;
+    }
+
+    .caixa {
+        width: 90%;
+    }
+}

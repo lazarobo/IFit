@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --body-color: #E4E9F7;
+    --sidebar-color: #fff;
+    --primary-color: #695CFE;
+    --primary-color-icon: #695CFE;
+    --second-color: #5247d4;
+    --primary-color-light: #e7ebf5;
+    --text-color: #707070;
+    --toggle-color: #DDDD;
+
+
+    --transition-02: all 0.2s ease;
+    --transition-03: all 0.3s ease;
+    --transition-04: all 0.4s ease;
+    --transition-05: all 0.5s ease;
+}
+
+
+body{
+    background: var(--primary-color);
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.login-direita img{
+    width: 70%;
+}
+
+
+.login-esquerda,
+.login-direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+.caixa{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--second-color);
+    border-radius: 20px;
+    padding: 30px 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.caixa > h3{
+    color: var(--sidebar-color);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.textfield{
+    width: 100%;
+    color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px 0;
+}
+
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield .text{
+    margin-bottom: 10px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+}
+
+.text .icon{
+    margin-right: 5px;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--sidebar-color);
+}
+
+.bnt-login{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background: #7e57c2;
+    cursor: pointer;
+    transition: var(--transition-02);
+    margin-bottom: 1rem;
+}
+
+
+.bnt-login:hover{
+    transform: scale(1.03);
+}
+
+
+@media only screen and (max-width: 950px){
+    .caixa{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .login-direita,
+    .login-esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    .login-direita img{
+        width: 35vh;
+    }
+
+    .caixa{
+        width: 90%;
+    }
+}
+
+.cadastrar p{
+    color: var(--sidebar-color);
+}
+
+.cadastrar a{
+    color: black;
+}
+
+.cadastrar p,
+.cadastrar a{
+    font-size: 12px;
+}

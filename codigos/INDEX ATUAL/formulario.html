@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Css/forms.css">
+    <script src="https://kit.fontawesome.com/e43fe3dded.js" crossorigin="anonymous"></script>
+    <title>Formulário de Inscrição</title>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="login-direita">
+            <img src="Imagens/workout-animate.svg" alt="">
+        </div>
+        <div class="login-esquerda">
+            <div class="caixa">
+                <form action="">
+                    <div class="form_header">
+                        <h1>Cadastre-se</h1>
+                        <div class="login_bnt">
+                            <button><a href="login.html">Entrar</a></button>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <label for="p_nome">Primeiro Nome</label>
+                            <input type="text" name="p_nome" id="p_nome" class="input_user"
+                                placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" class="input_user"
+                                placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="input_user"
+                                placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" class="input_user"
+                                placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" class="input_user"
+                                placeholder="Digite uma senha" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="conf_senha">Confirme a Senha</label>
+                            <input type="password" name="conf_senha" id="conf_senha" class="input_user"
+                                placeholder="Confirme a senha" required>
+                        </div>
+                        <div class="input_genero">
+                            <div class="genero_title">
+                                <span>Sexo:</span>
+                            </div>
+                            <div class="grupo_genero">
+                                <div class="genero">
+                                    <input type="radio" id="femenino" name="sexo" value="feminino" required>
+                                    <label for="femenino">Femenino</label>
+                                </div>
+                                <div class="genero">
+                                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                                <div class="genero">
+                                    <input type="radio" id="outro" name="sexo" value="outro" required>
+                                    <label for="outro">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bnt">
+                            <button><a href="login.html">Continuar</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div> <!--caixa-->
+        </div>
+    </div>
+</body>
+
+
+</html>
